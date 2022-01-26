@@ -12,6 +12,13 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
+  <distributionManagement>
+    <repository>
+      <id>local-deploy-repo</id>
+      <url>file:///C:/Users/ElaineLee/Documents/deploy-repo</url>
+    </repository>
+  </distributionManagement>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>11</maven.compiler.release>
