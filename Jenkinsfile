@@ -11,7 +11,7 @@ pipeline {
    stage('Test') {
       steps {
         bat 'echo "Testing..."'
-        bat 'mvn verify'
+        bat 'mvn clean verify sonar:sonar "-Dsonar.projectKey=example-project" "-Dsonar.host.url=http://localhost:9000" "-Dsonar.login=2edf7babaf7f1b9ca499c4055d4ddaaf1e089ca2"'
       }
     }
    stage('Deploy') {
